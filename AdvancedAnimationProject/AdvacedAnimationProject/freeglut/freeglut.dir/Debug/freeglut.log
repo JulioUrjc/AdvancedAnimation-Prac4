@@ -1,0 +1,95 @@
+﻿Compilación iniciada a las 30/06/2015 21:43:42.
+     1>Proyecto "C:\Users\Julio\Desktop\Prueba\liquidfun\Box2D\freeglut\freeglut.vcxproj" en el nodo 5 (Build destinos).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /I..\..\..\freeglut/include /I..\..\..\freeglut/src /Zi /nologo /W4 /WX /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D DEBUG=1 /D FREEGLUT_EXPORTS /D LIQUIDFUN_EXTERNAL_LANGUAGE_API=1 /D _CRT_SECURE_NO_WARNINGS /D HAVE_CONFIG_H /D "CMAKE_INTDIR=\"Debug\"" /D freeglut_EXPORTS /D _WINDLL /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"freeglut.dir\Debug\\" /Fd"freeglut.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\freeglut\src\fg_callbacks.c ..\..\..\freeglut\src\fg_cursor.c ..\..\..\freeglut\src\fg_display.c ..\..\..\freeglut\src\fg_ext.c ..\..\..\freeglut\src\fg_font.c ..\..\..\freeglut\src\fg_font_data.c ..\..\..\freeglut\src\fg_gamemode.c ..\..\..\freeglut\src\fg_geometry.c ..\..\..\freeglut\src\fg_gl2.c ..\..\..\freeglut\src\fg_init.c ..\..\..\freeglut\src\fg_input_devices.c ..\..\..\freeglut\src\fg_joystick.c ..\..\..\freeglut\src\fg_main.c ..\..\..\freeglut\src\fg_misc.c ..\..\..\freeglut\src\fg_overlay.c ..\..\..\freeglut\src\fg_spaceball.c ..\..\..\freeglut\src\fg_state.c ..\..\..\freeglut\src\fg_stroke_mono_roman.c ..\..\..\freeglut\src\fg_stroke_roman.c ..\..\..\freeglut\src\fg_structure.c ..\..\..\freeglut\src\fg_teapot.c ..\..\..\freeglut\src\fg_videoresize.c ..\..\..\freeglut\src\fg_window.c ..\..\..\freeglut\src\fg_menu.c ..\..\..\freeglut\src\mswin\fg_cursor_mswin.c ..\..\..\freeglut\src\mswin\fg_display_mswin.c ..\..\..\freeglut\src\mswin\fg_ext_mswin.c ..\..\..\freeglut\src\mswin\fg_gamemode_mswin.c ..\..\..\freeglut\src\mswin\fg_init_mswin.c ..\..\..\freeglut\src\mswin\fg_input_devices_mswin.c ..\..\..\freeglut\src\mswin\fg_joystick_mswin.c ..\..\..\freeglut\src\mswin\fg_main_mswin.c ..\..\..\freeglut\src\mswin\fg_menu_mswin.c ..\..\..\freeglut\src\mswin\fg_spaceball_mswin.c ..\..\..\freeglut\src\mswin\fg_state_mswin.c ..\..\..\freeglut\src\mswin\fg_structure_mswin.c ..\..\..\freeglut\src\mswin\fg_window_mswin.c ..\..\..\freeglut\src\util\xparsegeometry_repl.c
+         fg_callbacks.c
+         fg_cursor.c
+         fg_display.c
+         fg_ext.c
+         fg_font.c
+         fg_font_data.c
+         fg_gamemode.c
+         fg_geometry.c
+         fg_gl2.c
+         fg_init.c
+         fg_input_devices.c
+         fg_joystick.c
+         fg_main.c
+         fg_misc.c
+         fg_overlay.c
+         fg_spaceball.c
+         fg_state.c
+         fg_stroke_mono_roman.c
+         fg_stroke_roman.c
+         fg_structure.c
+         Generando código...
+         Compilando...
+         fg_teapot.c
+         fg_videoresize.c
+         fg_window.c
+         fg_menu.c
+         fg_cursor_mswin.c
+         fg_display_mswin.c
+         fg_ext_mswin.c
+         fg_gamemode_mswin.c
+         fg_init_mswin.c
+         fg_input_devices_mswin.c
+         fg_joystick_mswin.c
+         fg_main_mswin.c
+         fg_menu_mswin.c
+         fg_spaceball_mswin.c
+         fg_state_mswin.c
+         fg_structure_mswin.c
+         fg_window_mswin.c
+         fgSetupPixelFormat(): there is still some work to do here!
+         xparsegeometry_repl.c
+         Generando código...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D WIN32 /D _WINDOWS /D _DEBUG /D DEBUG=1 /D FREEGLUT_EXPORTS /D LIQUIDFUN_EXTERNAL_LANGUAGE_API=1 /D _CRT_SECURE_NO_WARNINGS /D HAVE_CONFIG_H /D "CMAKE_INTDIR=\\\"Debug\\\"" /D freeglut_EXPORTS /l"0x0409" /I..\ /I..\..\..\freeglut/include /I..\..\..\freeglut/src /nologo /fo"freeglut.dir\Debug\freeglut.res" ..\freeglut.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\freeglut\Debug\freeglutd.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib opengl32.lib winmm.lib /DEF:"..\freeglutdll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\freeglut/Debug/freeglutd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\freeglut/Debug/freeglutd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug /DLL freeglut.dir\Debug\freeglut.res
+         freeglut.dir\Debug\fg_callbacks.obj
+         freeglut.dir\Debug\fg_cursor.obj
+         freeglut.dir\Debug\fg_display.obj
+         freeglut.dir\Debug\fg_ext.obj
+         freeglut.dir\Debug\fg_font.obj
+         freeglut.dir\Debug\fg_font_data.obj
+         freeglut.dir\Debug\fg_gamemode.obj
+         freeglut.dir\Debug\fg_geometry.obj
+         freeglut.dir\Debug\fg_gl2.obj
+         freeglut.dir\Debug\fg_init.obj
+         freeglut.dir\Debug\fg_input_devices.obj
+         freeglut.dir\Debug\fg_joystick.obj
+         freeglut.dir\Debug\fg_main.obj
+         freeglut.dir\Debug\fg_misc.obj
+         freeglut.dir\Debug\fg_overlay.obj
+         freeglut.dir\Debug\fg_spaceball.obj
+         freeglut.dir\Debug\fg_state.obj
+         freeglut.dir\Debug\fg_stroke_mono_roman.obj
+         freeglut.dir\Debug\fg_stroke_roman.obj
+         freeglut.dir\Debug\fg_structure.obj
+         freeglut.dir\Debug\fg_teapot.obj
+         freeglut.dir\Debug\fg_videoresize.obj
+         freeglut.dir\Debug\fg_window.obj
+         freeglut.dir\Debug\fg_menu.obj
+         freeglut.dir\Debug\fg_cursor_mswin.obj
+         freeglut.dir\Debug\fg_display_mswin.obj
+         freeglut.dir\Debug\fg_ext_mswin.obj
+         freeglut.dir\Debug\fg_gamemode_mswin.obj
+         freeglut.dir\Debug\fg_init_mswin.obj
+         freeglut.dir\Debug\fg_input_devices_mswin.obj
+         freeglut.dir\Debug\fg_joystick_mswin.obj
+         freeglut.dir\Debug\fg_main_mswin.obj
+         freeglut.dir\Debug\fg_menu_mswin.obj
+         freeglut.dir\Debug\fg_spaceball_mswin.obj
+         freeglut.dir\Debug\fg_state_mswin.obj
+         freeglut.dir\Debug\fg_structure_mswin.obj
+         freeglut.dir\Debug\fg_window_mswin.obj
+         freeglut.dir\Debug\xparsegeometry_repl.obj
+            Creando biblioteca ..\freeglut/Debug/freeglutd.lib y objeto ..\freeglut/Debug/freeglutd.exp
+         freeglut.vcxproj -> C:\Users\Julio\Desktop\Prueba\liquidfun\Box2D\freeglut\..\freeglut\Debug\freeglutd.dll
+     1>Compilación del proyecto terminada "C:\Users\Julio\Desktop\Prueba\liquidfun\Box2D\freeglut\freeglut.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:11.66
