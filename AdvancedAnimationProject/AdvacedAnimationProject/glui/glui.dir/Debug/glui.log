@@ -1,0 +1,78 @@
+﻿Compilación iniciada a las 30/06/2015 21:43:41.
+     1>Proyecto "C:\Users\Julio\Desktop\Prueba\liquidfun\Box2D\glui\glui.vcxproj" en el nodo 4 (Build destinos).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\glui/../../../freeglut/include /Zi /nologo /W1 /WX /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D DEBUG=1 /D LIQUIDFUN_EXTERNAL_LANGUAGE_API=1 /D FREEGLUT_STATIC /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"glui.dir\Debug\\" /Fd"glui.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt algebra3.cpp arcball.cpp glui_add_controls.cpp glui_bitmap_img_data.cpp glui_bitmaps.cpp glui_button.cpp glui_checkbox.cpp glui_column.cpp glui_commandline.cpp glui_control.cpp glui_edittext.cpp glui_filebrowser.cpp glui_list.cpp glui_listbox.cpp glui_mouse_iaction.cpp glui_node.cpp glui_panel.cpp glui_radio.cpp glui_rollout.cpp glui_rotation.cpp glui_scrollbar.cpp glui_separator.cpp glui_spinner.cpp glui_statictext.cpp glui_string.cpp glui_textbox.cpp glui_translation.cpp glui_tree.cpp glui_treepanel.cpp glui_window.cpp glui.cpp quaternion.cpp
+         algebra3.cpp
+         arcball.cpp
+         glui_add_controls.cpp
+         glui_bitmap_img_data.cpp
+         glui_bitmaps.cpp
+         glui_button.cpp
+         glui_checkbox.cpp
+         glui_column.cpp
+         glui_commandline.cpp
+         glui_control.cpp
+         glui_edittext.cpp
+         glui_filebrowser.cpp
+         glui_list.cpp
+         glui_listbox.cpp
+         glui_mouse_iaction.cpp
+         glui_node.cpp
+         glui_panel.cpp
+         glui_radio.cpp
+         glui_rollout.cpp
+         glui_rotation.cpp
+         Generando código...
+         Compilando...
+         glui_scrollbar.cpp
+         glui_separator.cpp
+         glui_spinner.cpp
+         glui_statictext.cpp
+         glui_string.cpp
+         glui_textbox.cpp
+         glui_translation.cpp
+         glui_tree.cpp
+         glui_treepanel.cpp
+         glui_window.cpp
+         glui.cpp
+         quaternion.cpp
+         Generando código...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\glui\Debug\glui.lib" /NOLOGO glui.dir\Debug\algebra3.obj
+         glui.dir\Debug\arcball.obj
+         glui.dir\Debug\glui_add_controls.obj
+         glui.dir\Debug\glui_bitmap_img_data.obj
+         glui.dir\Debug\glui_bitmaps.obj
+         glui.dir\Debug\glui_button.obj
+         glui.dir\Debug\glui_checkbox.obj
+         glui.dir\Debug\glui_column.obj
+         glui.dir\Debug\glui_commandline.obj
+         glui.dir\Debug\glui_control.obj
+         glui.dir\Debug\glui_edittext.obj
+         glui.dir\Debug\glui_filebrowser.obj
+         glui.dir\Debug\glui_list.obj
+         glui.dir\Debug\glui_listbox.obj
+         glui.dir\Debug\glui_mouse_iaction.obj
+         glui.dir\Debug\glui_node.obj
+         glui.dir\Debug\glui_panel.obj
+         glui.dir\Debug\glui_radio.obj
+         glui.dir\Debug\glui_rollout.obj
+         glui.dir\Debug\glui_rotation.obj
+         glui.dir\Debug\glui_scrollbar.obj
+         glui.dir\Debug\glui_separator.obj
+         glui.dir\Debug\glui_spinner.obj
+         glui.dir\Debug\glui_statictext.obj
+         glui.dir\Debug\glui_string.obj
+         glui.dir\Debug\glui_textbox.obj
+         glui.dir\Debug\glui_translation.obj
+         glui.dir\Debug\glui_tree.obj
+         glui.dir\Debug\glui_treepanel.obj
+         glui.dir\Debug\glui_window.obj
+         glui.dir\Debug\glui.obj
+         glui.dir\Debug\quaternion.obj
+         glui.vcxproj -> C:\Users\Julio\Desktop\Prueba\liquidfun\Box2D\glui\..\glui\Debug\glui.lib
+     1>Compilación del proyecto terminada "C:\Users\Julio\Desktop\Prueba\liquidfun\Box2D\glui\glui.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:17.65
