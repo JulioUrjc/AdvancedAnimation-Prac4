@@ -229,6 +229,8 @@ class Scene3 : public Test{
 			m_emitter3.Step(dt, NULL, 0); // Create the particles.
 
 			m_debugDraw.DrawString(700, 60, "Porcentaje: %i", porcentaje);
+			m_debugDraw.DrawString(700, 75, "Porcentaje: %i", porcentaje2);
+			m_debugDraw.DrawString(700, 90, "Porcentaje: %i", porcentaje3);
 			//m_debugDraw.DrawString(700, 75, "Barrier Pos: %f", m_position);
 			//m_debugDraw.DrawString(700, 90, "Num Particles2: %i", bottom2);
 		}
@@ -302,9 +304,7 @@ class Scene3 : public Test{
 				cout <<"Increase the temperature (velocity of particles)" << endl;
 				break;
 			case 'k':
-				m_emitter.SetColor(b2ParticleColor(0, 255, 0, 255));
-				//ColorParticleGroup(m_particleGroup,0);
-				//Reset();
+				
 				cout << "Change Color" << endl;
 				break;
 				//SetGroupFlags(uint32 flags);

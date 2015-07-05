@@ -20,6 +20,8 @@ namespace TestMain{
 			int32 ENABLE_GLUI2 = 1;
 			int32 testIndex = 0;
 			int32 testSelection = 0;
+			int32 testo = 0;
+			GLUI_String texto = "Hello World!";
 			int32 testCount = 0;
 			TestEntry* entry;
 			Test* test;
@@ -132,17 +134,11 @@ namespace TestMain{
 			if (fullscreenUI.GetEnabled()){
 				const uint32 options = particleParameter.GetOptions();
 
-				settings.strictContacts 	= options & ParticleParameter::OptionStrictContacts;
-				//settings.drawContactPoints	= options & ParticleParameter::OptionDrawContactPoints;
-				//settings.drawContactNormals	= options & ParticleParameter::OptionDrawContactNormals;
-				//settings.drawContactImpulse	= options & ParticleParameter::OptionDrawContactImpulse;
-				//settings.drawFrictionImpulse= options & ParticleParameter::OptionDrawFrictionImpulse;
-				settings.drawStats 			= options & ParticleParameter::OptionDrawStats;
-				settings.drawProfile		= options & ParticleParameter::OptionDrawProfile;
-				// The b2Draw based flags must be exactly 0 or 1 currently.
+				settings.strictContacts = options & ParticleParameter::OptionStrictContacts;
+				settings.drawStats 		= options & ParticleParameter::OptionDrawStats;
+				settings.drawProfile	= options & ParticleParameter::OptionDrawProfile;
 				settings.drawShapes 	= options & ParticleParameter::OptionDrawShapes ? 1 : 0;
 				settings.drawParticles 	= options & ParticleParameter::OptionDrawParticles ? 1 : 0;
-				//settings.drawJoints		= options & ParticleParameter::OptionDrawJoints ? 1 : 0;
 				settings.drawAABBs		= options & ParticleParameter::OptionDrawAABBs ? 1 : 0;
 				settings.drawCOMs 		= options & ParticleParameter::OptionDrawCOMs ? 1 : 0;
 
