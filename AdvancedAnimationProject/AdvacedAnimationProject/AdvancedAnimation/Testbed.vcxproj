@@ -271,7 +271,6 @@
     <ClInclude Include="Framework\Arrow.h" />
     <ClInclude Include="Framework\FullscreenUI.h" />
     <ClInclude Include="Framework\ParticleParameter.h" />
-    <ClInclude Include="Tests\LiquidTimer.h" />
     <ClCompile Include="Framework\Main.cpp" />
     <ClCompile Include="Framework\Render.cpp" />
     <ClCompile Include="Framework\Test.cpp" />
@@ -282,6 +281,7 @@
     <ClInclude Include="Tests\Scene1.h" />
     <ClInclude Include="Tests\Scene2.h" />
     <ClInclude Include="Tests\Scene3.h" />
+    <ClInclude Include="Tests\Scene4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,8 +1,8 @@
-﻿Compilación iniciada a las 05/07/2015 14:48:08.
-     1>Proyecto "C:\Users\Julio\Desktop\AdvancedAnimationProject\AdvacedAnimationProject\AdvancedAnimation\Testbed.vcxproj" en el nodo 2 (Build destinos).
+﻿Compilación iniciada a las 05/07/2015 21:57:47.
+     1>Proyecto "D:\Master\Animacion Avanzada (AA)\Prac4-Trabajo\AdvancedAnimationProject\AdvacedAnimationProject\AdvancedAnimation\Testbed.vcxproj" en el nodo 2 (Build destinos).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /I../../freeglut /Zi /nologo /W4 /WX /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D DEBUG=1 /D LIQUIDFUN_EXTERNAL_LANGUAGE_API=1 /D FREEGLUT_EXPORTS /D FREEGLUT_STATIC /D GLUT_DISABLE_ATEXIT_HACK /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"AAScenes.dir\Debug\\" /Fd"AAScenes.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Framework\Main.cpp
-         Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /I../../freeglut /Zi /nologo /W4 /WX /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D DEBUG=1 /D LIQUIDFUN_EXTERNAL_LANGUAGE_API=1 /D FREEGLUT_EXPORTS /D FREEGLUT_STATIC /D GLUT_DISABLE_ATEXIT_HACK /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"AAScenes.dir\Debug\\" /Fd"AAScenes.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Tests\TestEntries.cpp
+         TestEntries.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\AAScenes\Debug\AAScenes.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\Box2D\Debug\liquidfun.lib ..\freeglut\Debug\freeglut_staticd.lib ..\glui\Debug\glui.lib winmm.lib glu32.lib opengl32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\AdvancedAnimation/Debug/AAScenes.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\AAScenes\Debug\AAScenes.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug AAScenes.dir\Debug\Main.obj
          AAScenes.dir\Debug\Render.obj
@@ -11,9 +11,9 @@
          AAScenes.dir\Debug\FullscreenUI.obj
          AAScenes.dir\Debug\ParticleParameter.obj
          AAScenes.dir\Debug\TestEntries.obj
-         Testbed.vcxproj -> C:\Users\Julio\Desktop\AdvancedAnimationProject\AdvacedAnimationProject\AdvancedAnimation\..\AAScenes\Debug\AAScenes.exe
-     1>Compilación del proyecto terminada "C:\Users\Julio\Desktop\AdvancedAnimationProject\AdvacedAnimationProject\AdvancedAnimation\Testbed.vcxproj" (Build destinos).
+         Testbed.vcxproj -> D:\Master\Animacion Avanzada (AA)\Prac4-Trabajo\AdvancedAnimationProject\AdvacedAnimationProject\AdvancedAnimation\..\AAScenes\Debug\AAScenes.exe
+     1>Compilación del proyecto terminada "D:\Master\Animacion Avanzada (AA)\Prac4-Trabajo\AdvancedAnimationProject\AdvacedAnimationProject\AdvancedAnimation\Testbed.vcxproj" (Build destinos).
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:03.26
+Tiempo transcurrido 00:00:02.88

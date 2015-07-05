@@ -8,9 +8,15 @@ class Scene3 : public Test{
 	public:
 		Scene3(){
 			Zoom = 0.15f;
-			porcentaje = 0;
-			porcentaje2 = 40;
-			porcentaje3 = 80;
+
+			porcentaje3 = 0;
+			porcentaje = 50;
+			porcentaje2 = 100;
+
+			m_position = 0;
+			m_position2 = 0;
+			m_position3 = 0;
+
 			// Configure particle system parameters.
 			m_particleSystem->SetRadius(0.065f);
 			m_particleSystem->SetMaxParticleCount(k_maxParticleCount);
@@ -104,20 +110,23 @@ class Scene3 : public Test{
 			}
 
 			// Enable the barrier.
-			EnableBarrier();
-			cout << m_position<< endl;
-			cout << m_position2 + k_barrierMovementIncrement*porcentaje2 / 10 << endl;
-			cout << m_position3 + k_barrierMovementIncrement*porcentaje3 / 10 << endl;
+			EnableBarrier();			
 
-			MoveDivider(m_position + k_barrierMovementIncrement*porcentaje/10, 0); 
-			MoveDivider2(m_position2 + k_barrierMovementIncrement*porcentaje2 / 10, 0);
-			MoveDivider3(m_position3 + k_barrierMovementIncrement*porcentaje3 / 10, 0);
+			//Initial barrier positions
+			MoveDivider(m_position + k_barrierMovementIncrement*correspondiente(porcentaje), 0); 
+			MoveDivider2(m_position2 + k_barrierMovementIncrement*correspondiente(porcentaje2), 0);
+			MoveDivider3(m_position3 + k_barrierMovementIncrement*correspondiente(porcentaje3), 0);
+
 			// Don't restart the test when changing particle types.
 			TestMain::SetRestartOnParticleParameterChange(false);
 			// Limit the set of particle types.
 			TestMain::SetParticleParameters(k_paramDef, k_paramDefCount);
 			// Create the particles.
 			//ResetParticles();
+		}
+
+		int correspondiente(int p){
+			return p/5;
 		}
 
 		// Disable the barrier.
@@ -167,32 +176,8 @@ class Scene3 : public Test{
 		// Enable / disable the barrier.
 		void ToggleBarrier(){ if (m_barrierBody){ DisableBarrier(); }else{ EnableBarrier(); } }
 
-		// Destroy and recreate all particles.
-		//void ResetParticles(){
-		//	if (m_particleGroup != NULL){ m_particleGroup->DestroyParticles();	m_particleGroup = NULL;	}
+		
 
-		//	//m_particleSystem->SetRadius(k_containerHalfWidth / 20.0f);
-		//	m_particleSystem->SetRadius(k_containerHalfWidth / 20.0f);
-		//	{
-		//		b2PolygonShape shape;
-		//		//shape.SetAsBox(m_density * k_containerHalfWidth, m_density * k_containerHalfHeight,	b2Vec2(0, k_containerHalfHeight), 0);
-		//		shape.SetAsBox(9.005f, 0.05f, b2Vec2(0, 0.07f), 0);
-		//		b2ParticleGroupDef pd;
-		//		pd.flags = b2_powderParticle;
-		//		//pd.flags = b2_waterParticle;
-		//		pd.SetColor(255,0,0,255);
-		//		pd.SetPosition(0,0);
-		//		pd.shape = &shape;
-		//		m_particleGroup = m_particleSystem->CreateParticleGroup(pd);
-		//		b2Vec2* velocities = m_particleSystem->GetVelocityBuffer() + m_particleGroup->GetBufferIndex();
-		//		for (int i = 0; i < m_particleGroup->GetParticleCount(); ++i){
-		//			b2Vec2& v = *(velocities + i);
-		//			v.Set(RandomFloat() + 1.0f, RandomFloat() + 1.0f);
-		//			v.Normalize();
-		//			v *= m_temperature;
-		//		}
-		//	}
-		//}
 		b2ParticleColor colorPorcentaje(int p){
 			int intervalo = (p>0) + (p>20) + (p>40) + (p>60) + (p>80);
 			switch (intervalo){
@@ -227,12 +212,14 @@ class Scene3 : public Test{
 			m_emitter3.SetParticleFlags(TestMain::GetParticleParameterValue());
 			m_emitter3.SetColor(colorPorcentaje(porcentaje3));
 			m_emitter3.Step(dt, NULL, 0); // Create the particles.
+	
+			m_debugDraw.DrawString(140, 60, "Porcentaje: %i", porcentaje3);	
+			m_debugDraw.DrawString(400, 60, "Porcentaje: %i", porcentaje);
+			m_debugDraw.DrawString(650, 60, "Porcentaje: %i", porcentaje2);
 
-			m_debugDraw.DrawString(700, 60, "Porcentaje: %i", porcentaje);
-			m_debugDraw.DrawString(700, 75, "Porcentaje: %i", porcentaje2);
-			m_debugDraw.DrawString(700, 90, "Porcentaje: %i", porcentaje3);
-			//m_debugDraw.DrawString(700, 75, "Barrier Pos: %f", m_position);
-			//m_debugDraw.DrawString(700, 90, "Num Particles2: %i", bottom2);
+			m_debugDraw.DrawString(140, 80, "Posicion1: %.2f", m_position3);
+			m_debugDraw.DrawString(400, 80, "Posicion2: %.2f", m_position);
+			m_debugDraw.DrawString(650, 80, "Posicion3: %.2f", m_position2);
 		}
 
 		// Reset the particles and the barrier.
@@ -263,14 +250,6 @@ class Scene3 : public Test{
 				ToggleBarrier();
 				cout << "Enable / disable the barrier "<< endl;
 				break;
-			case 's':
-				
-				cout <<"Increase the particle density" << endl;
-				break;
-			case 'd':
-				
-				cout <<"Reduce the particle density" << endl;
-				break;
 			case 'f':
 				MoveDivider(m_position + k_barrierMovementIncrement,5);
 				cout <<"Move the location of the divider up" << endl;
@@ -294,14 +273,6 @@ class Scene3 : public Test{
 			case 'm':
 				MoveDivider3(m_position3 - k_barrierMovementIncrement,-5);
 				cout << "Move the location of the divider down" << endl;
-				break;
-			case 'h':
-				
-				cout <<"Reduce the temperature (velocity of particles)" << endl;
-				break;
-			case 'j':
-				
-				cout <<"Increase the temperature (velocity of particles)" << endl;
 				break;
 			case 'k':
 				
@@ -328,7 +299,7 @@ class Scene3 : public Test{
 		int32 porcentaje2;
 		int32 porcentaje3;
 
-		float32 m_position;
+		float32 m_position ;
 		float32 m_position2;
 		float32 m_position3;
 		

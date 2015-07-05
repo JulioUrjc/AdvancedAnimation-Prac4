@@ -42,9 +42,6 @@
     <ClInclude Include="Framework\ParticleParameter.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Tests\LiquidTimer.h">
-      <Filter>Scenes</Filter>
-    </ClInclude>
     <ClInclude Include="Tests\Scene1.h">
       <Filter>Scenes</Filter>
     </ClInclude>
@@ -56,6 +53,9 @@
     </ClInclude>
     <ClInclude Include="Framework\ParticleEmitter.h">
       <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Tests\Scene4.h">
+      <Filter>Scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

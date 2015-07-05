@@ -135,10 +135,10 @@ struct b2Vec2
 	}
 
 	/// Get the skew vector such that dot(skew_vec, other) == cross(vec, other)
-	b2Vec2 Skew() const
-	{
-		return b2Vec2(-y, x);
-	}
+	b2Vec2 Skew() const{return b2Vec2(-y, x);}
+	b2Vec2 Skew2() const{return b2Vec2(-y, -x);	}
+	b2Vec2 Skew3() const{return b2Vec2(-x, y);}
+	b2Vec2 Skew4() const{return b2Vec2(x, -y); }
 
 	float32 x, y;
 };
